@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/PangenomesTut.iml" filepath="$PROJECT_DIR$/.idea/PangenomesTut.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Pangenomes.iml" filepath="$PROJECT_DIR$/.idea/Pangenomes.iml" />
     </modules>
   </component>
 </project>
