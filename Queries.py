@@ -1,4 +1,4 @@
-from typedb.client import TypeDB, TypeDBClient, SessionType, TransactionType
+from typedb.client import TypeDB, SessionType, TransactionType
 
 with TypeDB.core_client("localhost:1729") as client:
     with client.session("phone_calls", SessionType.DATA) as session:
