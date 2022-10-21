@@ -27,7 +27,10 @@ def contract_template(contract):
 
 
 def call_template(call):
-    pass
+    typeql_insert_query = 'match $caller isa person, has name "' + call["caller_name"] + '";'
+    typeql_insert_query += ' $callee isa person, has name "' + call["callee_name"] + '";'
+    typeql_insert_query += ' insert $call(caller: $caller, callee: $callee) isa call; has started-at ' + call["started_at"] +'; has duration ' + str(call["duration"]) + ';'
+    return typeql_insert_query
 
 
 inputs = [
@@ -48,9 +51,6 @@ inputs = [
         "template": call_template
     }
 ]
-
-
-
 
 
 def parse_data_to_dictionaries(input):
